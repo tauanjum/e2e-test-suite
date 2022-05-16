@@ -3,6 +3,7 @@ name: E2E canary tests
 on:
   push:
     branches: [ master ]
+  workflow_dispatch:
 
 # jobs:
 #   build:
