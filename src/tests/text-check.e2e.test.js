@@ -15,7 +15,7 @@ describe("App.js", () => {
     await delay(10000);
     const text = await page.$eval(".App-welcome-message", (e) => e.textContent);
     expect(text).toContain("Hello from NodeJs server");
-  });
+  }, 15000);
 
   afterAll(() => browser.close());
 });
