@@ -9,8 +9,8 @@ describe("App.js", () => {
     page = await browser.newPage();
   });
 
-  it("contains the welcome text", async () => {
-    await page.goto("https://ganes-constellation.github.io/sample-react-app/");
+  it("staging environment test - contains the welcome text", async () => {
+    await page.goto("<URL_OF_THE_STAGING_FRONTEND_APP>");
     await page.waitForSelector(".App-welcome-message");
     await delay(10000);
     const text = await page.$eval(".App-welcome-message", (e) => e.textContent);
