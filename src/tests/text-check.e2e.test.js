@@ -12,7 +12,7 @@ describe("App.js", () => {
   it("contains the welcome text", async () => {
     await page.goto("https://ganes-constellation.github.io/sample-react-app/");
     await page.waitForSelector(".App-welcome-message");
-    await delay(4000);
+    await delay(10000);
     const text = await page.$eval(".App-welcome-message", (e) => e.textContent);
     expect(text).toContain("Hello from NodeJs server");
   });
